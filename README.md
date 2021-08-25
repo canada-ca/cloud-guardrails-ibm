@@ -1,35 +1,23 @@
-# GC Cloud Guardrails Checks for IBM Cloud
+# Government of Canada Cloud Guardrails Checks for IBM Cloud
 
-This project will host the minimum guardrails as part of the GC Cloud Operationalization Framework for IBM Cloud. 
+This repository will provide the tools required to validate the minimum guardrails for the GC Cloud Operationalization Framework for IBM Cloud
 
-These guardrails enable the GC's Cloud First direction and support for the GC Digital Standards.
+## GC Guardrails
 
-The users of this project will be Government of Canada employees deploying cloud-based workloads.
+The following tables contains the list of [Cloud Guardrails](https://github.com/canada-ca/cloud-guardrails) 
 
-## How to Contribute
-
-See [CONTRIBUTING.md](CONTRIBUTING.md)
-
-## License
-
-Unless otherwise noted, the source code of this project is covered under Crown Copyright, Government of Canada, and is distributed under the [MIT License](LICENSE).
-
-The Canada wordmark and related graphics associated with this distribution are protected under trademark law and copyright law. No permission is granted to use them outside the parameters of the Government of Canada's corporate identity program. For more information, see [Federal identity requirements](https://www.canada.ca/en/treasury-board-secretariat/topics/government-communications/federal-identity-requirements.html).
-
-______________________
-
-# GC Cloud Guardrails Checks for IBM Cloud
-
-TBD
-
-## Comment contribuer
-
-Voir [CONTRIBUTING.md](CONTRIBUTING.md)
-
-## Licence
-
-Sauf indication contraire, le code source de ce projet est protégé par le droit d'auteur de la Couronne du gouvernement du Canada et distribué sous la [licence MIT](LICENSE).
-
-Le mot-symbole « Canada » et les éléments graphiques connexes liés à cette distribution sont protégés en vertu des lois portant sur les marques de commerce et le droit d'auteur. Aucune autorisation n'est accordée pour leur utilisation à l'extérieur des paramètres du programme de coordination de l'image de marque du gouvernement du Canada. Pour obtenir davantage de renseignements à ce sujet, veuillez consulter les [Exigences pour l'image de marque](https://www.canada.ca/fr/secretariat-conseil-tresor/sujets/communications-gouvernementales/exigences-image-marque.html).
-
+| Guardrail | Description | Enforcement | Link |
+|----|----|----| --- |
+| 01 Protect Root / Global Admins Account | Protect root or master account used to establish the cloud service. | Doc | [link](./guardrails/01-mfa-validation/guardrail-1-mfa.md)  |
+| 02 Management of Administrative Privileges | Establish access control policies and procedures for management of administrative privileges | Doc | [link](./guardrails/02-management-administration-privileges/management-administration-privileges.md)   |
+| 03 Cloud Console Access | Limit access to GC managed devices and authorized users. | Doc | [link](./guardrails/03-cloud-console-access/cloud-console-access.md)  |
+| 04 Enterprise Monitoring Accounts | Create role-based account to enable enterprise monitoring and visibility. | Rego | [link](guardrails/04-monitoring-account/04-monitoring-account.md) |
+| 05 Data Location | Establish policies to restrict GC sensitive workloads to approved geographic locations. | Rego | [link](guardrails/05-data-location/guardrail-6-data-location.md) |
+| 06 Protection of Data-At-Rest | Protect data at rest by default (e.g. storage) for cloud-based workloads. | Doc | [link](./guardrails/06-data-at-rest/guardrail-6-at-rest.md) |
+| 07 Protection of Data-In-Transit | Protect data transiting networks through the use of appropriate encryption and network safeguards. | Doc | [link](./guardrails/07-data-in-transit/guardrail-7-in-transit.md) |
+| 08 Segment and Separate | Segment and separate information based on sensitivity of information. | Rego | [link](./guardrails/08-segment-separate/guardrail-8-segment-separate.md) |
+| 09 Network Security Services | Establish external and internal network perimeters and monitor network traffic.| Rego | [Link](./guardrails/09_Limit_egress_traffic/guardrails-9-network-security-services.md) |
+| 10 Cyber Defence Services | Establish MOU for defensive services and threat monitoring protection services. | MOU |
+| 11 Logging and Monitoring | Enable logging for the cloud environment and for cloud-based workloads. | Rego | [Link](./guardrails/11-logging-and-monitoring/guardrail-11-logging-monitoring.md) |
+| 12 Configuration of Cloud Marketplaces | Configuration of Cloud Market Places | Rego | [Link](./guardrails/12-market-place/guardrail-12-marketplace.md) |
 
