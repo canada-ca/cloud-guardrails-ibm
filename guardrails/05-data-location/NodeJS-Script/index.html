@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src='/client.js'></script>
+    <style>
+        .preBlock {
+            font-size: 0.9em;
+        }
+        
+        .ScrollBlock {
+            height: 12em;
+            overflow: scroll;
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Guardrail #5: Audit Resource & Data Locations</h2>
+    <table>
+        <tr>
+            <td>Account ID</td>
+            <td>API Key</td>
+        </tr>
+        <tr>
+            <td><input id='account_id' type='text' placeholder='Account ID' />
+            </td>
+            <td><input id='api_key' type='text' placeholder='API Key' /></td>
+        </tr>
+    </table>
+
+    <div>
+        <!--
+        <h2>Account Details (users)</h2>
+        <input id='GetUsers' type='button' value='Get Users' />
+        <div class='ScrollBlock'>
+            <pre id='UsersRes' class='preBlock'></pre>
+        </div>
+    -->
+        <h2>Account Details (resource groups)</h2>
+        <input id='GetResourceGroups' type='button' value='Get Resource Groups' />
+        <div class='ScrollBlock'>
+            <pre id='ResourceGroupsRes' class='preBlock'></pre>
+        </div>
+
+        <h2>Guardrail #5: Account resources (highlighted)</h2>
+        <input id='GetResourceInstances' type='button' value='Get Resource Instances' />
+        <div class='ScrollBlock'>
+            <pre id='ResourceInstancesRes' class='preBlock'></pre>
+        </div>
+        <!--
+        <h2>Guardrail #6: Network Segmentation &amp; Separation</h2>
+        <input id='GetVLANs' type='button' value='Get VLANs (Classic)' />
+        <div class='ScrollBlock'>
+            <pre id='VLANsRes' class='preBlock'></pre>
+        </div>
+
+        <h2>Get VPC Clusters</h2>
+        <input id='GetVPCClusters' type='button' value='Get VPC Clusters' />
+        <div class='ScrollBlock'>
+            <pre id='VPCClustersRes' class='preBlock'></pre>
+        </div>
+    -->
+    </div>
+</body>
+
+</html>
