@@ -5,6 +5,7 @@ This repository will provide the tools required to validate the minimum guardrai
 ## GC Guardrails
 
 The following tables contains the list of [Cloud Guardrails](https://github.com/canada-ca/cloud-guardrails) 
+You can also reach the IBM Cloud - [Government of Canada Guardrail Accelerator here: IBM Cloud Accelerator ](https://github.com/ibmcloud-tech-canada/ibmcloud-gc-guardrails-accelerator) 
 
 | Guardrail | Description | Enforcement | Link |
 |----|----|----| --- |
